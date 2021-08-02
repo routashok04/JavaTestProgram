@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 
 public class Multiply {
     public static void main(String[] args) {
-        List<Integer> integers = Arrays.asList();
+        List<Integer> integers = Arrays.asList(1,2,3,4,5,6);
         List<Integer> collect = integers.stream().map(n -> n * n).collect(Collectors.toList());
         System.out.println("Multiplication using Stream:"+collect);
         Optional<Integer> reduce = integers.stream().reduce((a, b) -> a * b);
